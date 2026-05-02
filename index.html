@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kanishka Srivastava | Author</title>
+  <title>Kanishka Srivastava | Author, Poet, Engineer</title>
   <meta name="description" content="Official website of Kanishka Srivastava, author and poet.">
 
   <style>
@@ -15,37 +15,36 @@
       font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: #e2e8f0;
+      line-height: 1.7;
     }
 
     nav {
       position: sticky;
       top: 0;
       background: rgba(2, 6, 23, 0.9);
-      padding: 15px;
+      backdrop-filter: blur(10px);
+      padding: 14px;
       text-align: center;
       border-bottom: 1px solid #1e293b;
+      z-index: 10;
     }
 
     nav a {
       color: #38bdf8;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
+      font-size: 0.95rem;
     }
 
     header {
       text-align: center;
-      padding: 100px 20px;
+      padding: 110px 20px 80px;
       background: linear-gradient(135deg, #020617, #1e293b);
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+    header h1 { font-size: 3rem; margin: 0; }
 
-    header p {
-      color: #94a3b8;
-    }
+    header p { color: #94a3b8; }
 
     .hero-line {
       margin-top: 20px;
@@ -73,62 +72,53 @@
     h2 {
       border-bottom: 2px solid #334155;
       padding-bottom: 10px;
-    }
-
-    /* BOOK GRID */
-    .book-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .book {
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 12px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .book img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .book:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 30px rgba(56,189,248,0.3);
-    }
-
-    .subtitle {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      margin: 8px 0 10px;
-    }
-
-    details {
-      margin-top: 30px;
-    }
-
-    summary {
-      cursor: pointer;
-      color: #38bdf8;
-      font-weight: bold;
+      margin-bottom: 25px;
     }
 
     .card {
       background: #1e293b;
       padding: 20px;
       border-radius: 12px;
-      margin-top: 15px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul { padding-left: 20px; }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      color: #cbd5f5;
+      margin-top: 20px;
+    }
+
+    details {
+      margin-top: 25px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: #38bdf8;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin: 10px 0 20px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #020617;
       color: #64748b;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -138,63 +128,75 @@
 <nav>
   <a href="#about">About</a>
   <a href="#books">Books</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#philosophy">Philosophy</a>
 </nav>
 
 <header>
   <h1>Kanishka Srivastava</h1>
   <p>Engineer • Author • Poet</p>
+  <p><i>Blending logic with literature</i></p>
 
   <p class="hero-line">
     Published Author • 15+ Anthologies • Recognized Nationwide
   </p>
 
-  <a href="#books" class="btn">Explore Books</a>
+  <a href="#books" class="btn">Explore Works</a>
 </header>
 
 <section id="about">
   <h2>About</h2>
+
   <p>
     Kanishka Srivastava is an engineer inspired by literature and life, blending technical reasoning with creative expression.
     Through his words, he crafts stories that linger long after the pages are closed.
   </p>
+
+  <p>
+    He is the author of internationally recognized books including 
+    <strong>The Adventures of Eshani and the Seasons</strong>, 
+    <strong>Ekansh and the Night of Falling Stars</strong>, and 
+    <strong>The Sargam of Silence</strong>.
+  </p>
+
+  <p>
+    His literary journey has earned him recognition among the <strong>Top 100 Poets of India</strong> by S7 Poetry 
+    and a place in the <strong>Top 10 Authors of India Project</strong> by Milaan Publication.
+  </p>
+
+  <p>
+    His works have been featured in several national and international anthologies, reflecting a consistent literary presence.
+  </p>
 </section>
 
 <section id="books">
-  <h2>Books & Publications</h2>
+  <h2>Books</h2>
 
-  <div class="book-grid">
-
-    <div class="book">
-      <img src="images/eshani.jpg" alt="Eshani Book">
-      <h3>The Adventures of Eshani and the Seasons</h3>
-      <p class="subtitle">
-        A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids
-      </p>
-      <a href="https://www.amazon.in/dp/9355454279" target="_blank" class="btn">View on Amazon</a>
-    </div>
-
-    <div class="book">
-      <img src="images/ekansh.jpg" alt="Ekansh Book">
-      <h3>Ekansh and the Night of Falling Stars</h3>
-      <p class="subtitle">
-        A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids
-      </p>
-      <a href="https://www.amazon.in/dp/937650660X" target="_blank" class="btn">View on Amazon</a>
-    </div>
-
-    <div class="book">
-      <img src="images/sargam.jpg" alt="Sargam Book">
-      <h3>The Sargam of Silence</h3>
-      <p class="subtitle">
-        A Journey Through Friendship, Love, and Self-Discovery
-      </p>
-      <a href="https://www.amazon.in/dp/9376500202" target="_blank" class="btn">View on Amazon</a>
-    </div>
-
+  <div class="card">
+    <h3>The Adventures of Eshani and the Seasons</h3>
+    <p>A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
+    <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
   </div>
 
+  <div class="card">
+    <h3>Ekansh and the Night of Falling Stars</h3>
+    <p>A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
+    <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
+  </div>
+
+  <div class="card">
+    <h3>The Sargam of Silence</h3>
+    <p>A Journey Through Friendship, Love, and Self-Discovery</p>
+    <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
+  </div>
+
+  <!-- YOUR ORIGINAL ANTHOLOGY STRUCTURE (UNCHANGED LOGIC) -->
   <details>
     <summary>Explore Full Publications →</summary>
+
+    <p class="subtle">
+      Published across multiple national and international anthologies
+    </p>
 
     <div class="card">
       <h3>Nature & Emotion</h3>
@@ -232,7 +234,28 @@
     </div>
 
   </details>
+</section>
 
+<section id="achievements">
+  <h2>Achievements</h2>
+
+  <div class="card">
+    <ul>
+      <li>Top 100 Poets of India — S7 Poetry</li>
+      <li>Top 10 Authors of India — Milaan Publication</li>
+      <li>3rd Place — The Aurora’s Embrace Vol-3</li>
+      <li>Honored by Inkhub Publication</li>
+    </ul>
+  </div>
+</section>
+
+<section id="philosophy">
+  <h2>Philosophy</h2>
+
+  <p class="quote">
+    "In a world filled with noise, I choose to write in silence.<br>
+    Because sometimes, the quietest words leave the deepest echoes."
+  </p>
 </section>
 
 <footer>
