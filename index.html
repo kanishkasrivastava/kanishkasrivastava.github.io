@@ -42,9 +42,14 @@
       background: linear-gradient(135deg, #020617, #1e293b);
     }
 
-    header h1 { font-size: 3rem; margin: 0; }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
 
-    header p { color: #94a3b8; }
+    header p {
+      color: #94a3b8;
+    }
 
     .hero-line {
       margin-top: 20px;
@@ -75,30 +80,44 @@
       margin-bottom: 25px;
     }
 
+    /* BOOK CARD */
+    .book-card {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .book-card img {
+      width: 90px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .book-card h3 {
+      margin: 0 0 6px 0;
+    }
+
+    .book-card p {
+      margin: 0 0 10px 0;
+      color: #cbd5f5;
+    }
+
     .card {
       background: #1e293b;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
     }
 
     ul { padding-left: 20px; }
 
-    .quote {
-      font-style: italic;
-      text-align: center;
-      color: #cbd5f5;
-      margin-top: 20px;
-    }
-
-    details {
-      margin-top: 25px;
-    }
+    details { margin-top: 25px; }
 
     summary {
       cursor: pointer;
@@ -113,29 +132,19 @@
       margin: 10px 0 20px;
     }
 
+    .quote {
+      font-style: italic;
+      text-align: center;
+      color: #cbd5f5;
+      margin-top: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
       background: #020617;
       color: #64748b;
       font-size: 0.9rem;
-    }
-
-    .book-card {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    .book-card img {
-      width: 90px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 8px;
-      flex-shrink: 0;
     }
   </style>
 </head>
@@ -152,7 +161,6 @@
 <header>
   <h1>Kanishka Srivastava</h1>
   <p>Engineer • Author • Poet</p>
-  <p><i>Blending logic with literature</i></p>
 
   <p class="hero-line">
     Words that don’t just tell stories—they stay with you.
@@ -177,13 +185,8 @@
   </p>
 
   <p>
-    His literary journey has earned him recognition among the <strong>Top 100 Poets of India</strong> by S7 Poetry 
-    and a place in the <strong>Top 10 Authors of India Project</strong> by Milaan Publication.
-    He has been honoured by the Inkhub Publication for his literary excellence
-  </p>
-
-  <p>
-    His works have been featured in several national and international anthologies, reflecting a consistent literary presence.
+    His literary journey has earned recognition among the Top 100 Poets of India (S7 Poetry)
+    and Top 10 Authors of India Project (Milaan Publication).
   </p>
 </section>
 
@@ -191,27 +194,35 @@
   <h2>Books</h2>
 
   <div class="book-card">
-    <img src="images/eshani.jpg" alt="Eshani Book">
-    <h3>The Adventures of Eshani and the Seasons</h3>
-    <p>A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
-    <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
+    <img src="images/eshani.jpg" alt="The Adventures of Eshani and the Seasons Book Cover">
+
+    <div>
+      <h3>The Adventures of Eshani and the Seasons</h3>
+      <p>A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
+      <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
+    </div>
   </div>
 
   <div class="book-card">
-    <img src="images/ekansh.jpg" alt="Ekansh Book">
-    <h3>Ekansh and the Night of Falling Stars</h3>
-    <p>A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
-    <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
+    <img src="images/ekansh.jpg" alt="Ekansh and the Night of Falling Stars Book Cover">
+
+    <div>
+      <h3>Ekansh and the Night of Falling Stars</h3>
+      <p>A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
+      <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
+    </div>
   </div>
 
   <div class="book-card">
-    <img src="images/sargam.jpg" alt=" Book">
-    <h3>The Sargam of Silence</h3>
-    <p>A Journey Through Friendship, Love, and Self-Discovery</p>
-    <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
+    <img src="images/sargam.jpg" alt="The Sargam of Silence Book Cover">
+
+    <div>
+      <h3>The Sargam of Silence</h3>
+      <p>A Journey Through Friendship, Love, and Self-Discovery</p>
+      <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
+    </div>
   </div>
 
-  <!-- YOUR ORIGINAL ANTHOLOGY STRUCTURE (UNCHANGED LOGIC) -->
   <details>
     <summary>Explore Full Publications →</summary>
 
