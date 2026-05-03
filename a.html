@@ -16,8 +16,6 @@
       background: #0f172a;
       color: #e2e8f0;
       line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     nav {
@@ -49,9 +47,7 @@
       margin: 0;
     }
 
-    header p {
-      color: #94a3b8;
-    }
+    header p { color: #94a3b8; }
 
     .hero-line {
       margin-top: 20px;
@@ -82,7 +78,7 @@
       margin-bottom: 25px;
     }
 
-    /* BOOKS */
+    /* BOOK CARD FIXED (NO BLUR, NO CRUSHED IMAGE) */
     .book-card {
       display: flex;
       gap: 20px;
@@ -94,24 +90,21 @@
     }
 
     .book-card img {
-      width: 260px;
+      width: 160px;
       height: auto;
+      object-fit: contain;
       border-radius: 10px;
-      object-fit: cover;
+      background: #0f172a;
       flex-shrink: 0;
-      display: block;
     }
 
-    .book-content h3 {
-      margin: 0;
-    }
+    .book-content h3 { margin: 0; }
 
     .book-content p {
       margin: 6px 0 10px;
       color: #cbd5f5;
     }
 
-    /* CARDS */
     .card {
       background: #1e293b;
       padding: 20px;
@@ -150,7 +143,7 @@
       font-size: 0.9rem;
     }
 
-    /* MOBILE */
+    /* MOBILE ONLY ADJUSTMENT */
     @media (max-width: 700px) {
       .book-card {
         flex-direction: column;
@@ -160,6 +153,7 @@
 
       .book-card img {
         width: 70%;
+        max-width: 260px;
       }
     }
   </style>
@@ -179,7 +173,7 @@
   <p>Engineer • Author • Poet</p>
 
   <p class="hero-line">
-    Words that don’t just tell stories—they don’t leave you after you close the page.
+    Words that don’t just tell stories—they stay with you.
   </p>
 
   <a href="#books" class="btn">Explore Works</a>
@@ -201,8 +195,7 @@
   </p>
 
   <p>
-    His literary journey has earned recognition among Top 100 Poets of India (S7 Poetry)
-    and Top 10 Authors of India Project (Milaan Publication).
+    His literary journey has earned recognition among Top Poets and Authors in India through national literary platforms.
   </p>
 </section>
 
@@ -236,6 +229,7 @@
     </div>
   </div>
 
+  <!-- ANTHOLOGY SYSTEM (UNCHANGED) -->
   <details>
     <summary>Explore Full Publications →</summary>
 
@@ -275,7 +269,6 @@
         <li>Whispers Beneath the Night Sky</li>
       </ul>
     </div>
-
   </details>
 </section>
 
@@ -285,7 +278,7 @@
     <ul>
       <li>Top 100 Poets of India — S7 Poetry</li>
       <li>Top 10 Authors of India — Milaan Publication</li>
-      <li>Featured in multiple anthologies</li>
+      <li>Honored in multiple literary anthologies</li>
     </ul>
   </div>
 </section>
