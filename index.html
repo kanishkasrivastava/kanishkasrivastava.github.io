@@ -42,8 +42,14 @@
       background: linear-gradient(135deg, #020617, #1e293b);
     }
 
-    header h1 { font-size: 3rem; margin: 0; }
-    header p { color: #94a3b8; }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
 
     .hero-line {
       margin-top: 20px;
@@ -74,40 +80,39 @@
       margin-bottom: 25px;
     }
 
-    /* BOOK CARD FIXED */
+    /* BOOK CARD */
     .book-card {
       display: flex;
-      gap: 20px;
-      align-items: flex-start;
+      gap: 18px;
+      align-items: center;
       background: #1e293b;
       padding: 18px;
       border-radius: 12px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .book-card img {
-      width: 140px;       /* 🔥 FIXED SIZE */
+      width: 140px;
       height: auto;
       border-radius: 10px;
-      flex-shrink: 0;
       object-fit: contain;
+      flex-shrink: 0;
       background: #0f172a;
       padding: 4px;
     }
 
     .book-content {
       flex: 1;
+      min-width: 0;
     }
 
     .book-content h3 {
       margin: 0 0 6px 0;
-      font-size: 1.2rem;
     }
 
     .book-content p {
       margin: 0 0 10px 0;
       color: #cbd5f5;
-      font-size: 0.95rem;
     }
 
     .card {
@@ -125,6 +130,7 @@
       cursor: pointer;
       color: #38bdf8;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
     .subtle {
@@ -152,7 +158,6 @@
     @media (max-width: 700px) {
       .book-card {
         flex-direction: column;
-        align-items: center;
         text-align: center;
       }
 
@@ -198,6 +203,10 @@
     <strong>Ekansh and the Night of Falling Stars</strong>, and 
     <strong>The Sargam of Silence</strong>.
   </p>
+
+  <p>
+    His literary journey has earned recognition among Top Poets and Authors in India through national literary platforms.
+  </p>
 </section>
 
 <section id="books">
@@ -230,16 +239,56 @@
     </div>
   </div>
 
+  <details>
+    <summary>Explore Full Publications →</summary>
+
+    <p class="subtle">Published across multiple national and international anthologies</p>
+
+    <div class="card">
+      <h3>Nature & Emotion</h3>
+      <ul>
+        <li>Five Petals</li>
+        <li>Beautiful Soul</li>
+        <li>Memories and the Warmth</li>
+        <li>The Green Serenade Volume 2</li>
+        <li>The Purple Horizon Volume 3</li>
+        <li>Whispers of Healing Vol. 2 & 3</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Life & Reflection</h3>
+      <ul>
+        <li>A Glimpse of Life</li>
+        <li>Celebrate Life with Us</li>
+        <li>Utopia</li>
+        <li>Under the Umbrella</li>
+        <li>Threads of a Thousand Rhymes Volume 2</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Collections & Series</h3>
+      <ul>
+        <li>Autumn Volume 5</li>
+        <li>Tranquil Volume 2</li>
+        <li>Petals 2024</li>
+        <li>Nebula Dreams Volume 1</li>
+        <li>Bouquet of Words Vol. 2 & 3</li>
+        <li>Whispers Beneath the Night Sky</li>
+      </ul>
+    </div>
+
+  </details>
 </section>
 
 <section id="achievements">
   <h2>Achievements</h2>
   <div class="card">
     <ul>
-      <li>Top 100 Poets of India — S7 Poetry</li>
-      <li>Top 10 Authors of India — Milaan Publication</li>
-      <li>3rd Place — The Aurora’s Embrace Vol-3</li>
-      <li>Honored by Inkhub Publication</li>
+      <li>Top Poets recognition (S7 Poetry)</li>
+      <li>Top Authors listing (Milaan Publication)</li>
+      <li>Literary anthology contributions across India</li>
     </ul>
   </div>
 </section>
