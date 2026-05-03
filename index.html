@@ -52,9 +52,9 @@
     }
 
     .hero-line {
-      margin-top: 20px;
+      margin-top: 15px;
       color: #38bdf8;
-      font-weight: bold;
+      font-style: italic;
     }
 
     .btn {
@@ -84,18 +84,18 @@
     .book-card {
       display: flex;
       gap: 18px;
-      align-items: center;
+      align-items: flex-start;
       background: #1e293b;
-      padding: 15px;
+      padding: 18px;
       border-radius: 12px;
       margin-bottom: 20px;
     }
 
     .book-card img {
-      width: 90px;
-      height: 130px;
+      width: 110px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 10px;
       flex-shrink: 0;
     }
 
@@ -103,9 +103,10 @@
       margin: 0 0 6px 0;
     }
 
-    .book-card p {
+    .subtitle {
       margin: 0 0 10px 0;
-      color: #cbd5f5;
+      color: #94a3b8;
+      font-size: 0.9rem;
     }
 
     .card {
@@ -123,7 +124,6 @@
       cursor: pointer;
       color: #38bdf8;
       font-weight: bold;
-      margin-bottom: 10px;
     }
 
     .subtle {
@@ -161,10 +161,7 @@
 <header>
   <h1>Kanishka Srivastava</h1>
   <p>Engineer • Author • Poet</p>
-
-  <p class="hero-line">
-    Words that don’t just tell stories—they stay with you.
-  </p>
+  <p class="hero-line">Words that stay long after reading ends.</p>
 
   <a href="#books" class="btn">Explore Works</a>
 </header>
@@ -185,40 +182,39 @@
   </p>
 
   <p>
-    His literary journey has earned recognition among the Top 100 Poets of India (S7 Poetry)
-    and Top 10 Authors of India Project (Milaan Publication).
+    His literary journey has earned recognition among Top Poets and Authors in India and international anthology platforms.
   </p>
 </section>
 
 <section id="books">
   <h2>Books</h2>
 
+  <!-- BOOK 1 -->
   <div class="book-card">
-    <img src="images/eshani.jpg" alt="The Adventures of Eshani and the Seasons Book Cover">
-
+    <img src="images/eshani.jpg" alt="Eshani Book">
     <div>
       <h3>The Adventures of Eshani and the Seasons</h3>
-      <p>A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
+      <p class="subtitle">A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
       <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
     </div>
   </div>
 
+  <!-- BOOK 2 -->
   <div class="book-card">
-    <img src="images/ekansh.jpg" alt="Ekansh and the Night of Falling Stars Book Cover">
-
+    <img src="images/ekansh.jpg" alt="Ekansh Book">
     <div>
       <h3>Ekansh and the Night of Falling Stars</h3>
-      <p>A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
+      <p class="subtitle">A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
       <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
     </div>
   </div>
 
+  <!-- BOOK 3 -->
   <div class="book-card">
-    <img src="images/sargam.jpg" alt="The Sargam of Silence Book Cover">
-
+    <img src="images/sargam.jpg" alt="Sargam Book">
     <div>
       <h3>The Sargam of Silence</h3>
-      <p>A Journey Through Friendship, Love, and Self-Discovery</p>
+      <p class="subtitle">A Journey Through Friendship, Love, and Self-Discovery</p>
       <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
     </div>
   </div>
@@ -226,9 +222,7 @@
   <details>
     <summary>Explore Full Publications →</summary>
 
-    <p class="subtle">
-      Published across multiple national and international anthologies
-    </p>
+    <p class="subtle">Published across multiple national and international anthologies</p>
 
     <div class="card">
       <h3>Nature & Emotion</h3>
@@ -270,7 +264,6 @@
 
 <section id="achievements">
   <h2>Achievements</h2>
-
   <div class="card">
     <ul>
       <li>Top 100 Poets of India — S7 Poetry</li>
@@ -283,7 +276,6 @@
 
 <section id="philosophy">
   <h2>Philosophy</h2>
-
   <p class="quote">
     "In a world filled with noise, I choose to write in silence.<br>
     Because sometimes, the quietest words leave the deepest echoes."
