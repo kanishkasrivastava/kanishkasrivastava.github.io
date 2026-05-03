@@ -42,19 +42,13 @@
       background: linear-gradient(135deg, #020617, #1e293b);
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    header p {
-      color: #94a3b8;
-    }
+    header h1 { font-size: 3rem; margin: 0; }
+    header p { color: #94a3b8; }
 
     .hero-line {
-      margin-top: 15px;
+      margin-top: 20px;
       color: #38bdf8;
-      font-style: italic;
+      font-weight: bold;
     }
 
     .btn {
@@ -80,33 +74,40 @@
       margin-bottom: 25px;
     }
 
-    /* BOOK CARD */
+    /* BOOK CARD FIXED */
     .book-card {
       display: flex;
-      gap: 18px;
+      gap: 20px;
       align-items: flex-start;
       background: #1e293b;
       padding: 18px;
       border-radius: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .book-card img {
-      width: 110px;
-      height: 160px;
-      object-fit: cover;
+      width: 140px;       /* 🔥 FIXED SIZE */
+      height: auto;
       border-radius: 10px;
       flex-shrink: 0;
+      object-fit: contain;
+      background: #0f172a;
+      padding: 4px;
     }
 
-    .book-card h3 {
+    .book-content {
+      flex: 1;
+    }
+
+    .book-content h3 {
       margin: 0 0 6px 0;
+      font-size: 1.2rem;
     }
 
-    .subtitle {
+    .book-content p {
       margin: 0 0 10px 0;
-      color: #94a3b8;
-      font-size: 0.9rem;
+      color: #cbd5f5;
+      font-size: 0.95rem;
     }
 
     .card {
@@ -146,6 +147,20 @@
       color: #64748b;
       font-size: 0.9rem;
     }
+
+    /* MOBILE FIX */
+    @media (max-width: 700px) {
+      .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .book-card img {
+        width: 60%;
+      }
+    }
+
   </style>
 </head>
 
@@ -161,7 +176,10 @@
 <header>
   <h1>Kanishka Srivastava</h1>
   <p>Engineer • Author • Poet</p>
-  <p class="hero-line">Words that stay long after reading ends.</p>
+
+  <p class="hero-line">
+    Words that don’t just tell stories—they stay with you.
+  </p>
 
   <a href="#books" class="btn">Explore Works</a>
 </header>
@@ -180,86 +198,38 @@
     <strong>Ekansh and the Night of Falling Stars</strong>, and 
     <strong>The Sargam of Silence</strong>.
   </p>
-
-  <p>
-    His literary journey has earned recognition among Top Poets and Authors in India and international anthology platforms.
-  </p>
 </section>
 
 <section id="books">
   <h2>Books</h2>
 
-  <!-- BOOK 1 -->
   <div class="book-card">
     <img src="images/eshani.jpg" alt="Eshani Book">
-    <div>
+    <div class="book-content">
       <h3>The Adventures of Eshani and the Seasons</h3>
-      <p class="subtitle">A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
+      <p>A Magical Bedtime Journey Through India’s Six Seasons – Perfect for Babies and Young Kids</p>
       <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
     </div>
   </div>
 
-  <!-- BOOK 2 -->
   <div class="book-card">
     <img src="images/ekansh.jpg" alt="Ekansh Book">
-    <div>
+    <div class="book-content">
       <h3>Ekansh and the Night of Falling Stars</h3>
-      <p class="subtitle">A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
+      <p>A Magical Bedtime Journey Through Stars – Perfect for Babies and Young Kids</p>
       <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
     </div>
   </div>
 
-  <!-- BOOK 3 -->
   <div class="book-card">
     <img src="images/sargam.jpg" alt="Sargam Book">
-    <div>
+    <div class="book-content">
       <h3>The Sargam of Silence</h3>
-      <p class="subtitle">A Journey Through Friendship, Love, and Self-Discovery</p>
+      <p>A Journey Through Friendship, Love, and Self-Discovery</p>
       <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
     </div>
   </div>
 
-  <details>
-    <summary>Explore Full Publications →</summary>
-
-    <p class="subtle">Published across multiple national and international anthologies</p>
-
-    <div class="card">
-      <h3>Nature & Emotion</h3>
-      <ul>
-        <li>Five Petals</li>
-        <li>Beautiful Soul</li>
-        <li>Memories and the Warmth</li>
-        <li>The Green Serenade Volume 2</li>
-        <li>The Purple Horizon Volume 3</li>
-        <li>Whispers of Healing Vol. 2 & 3</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Life & Reflection</h3>
-      <ul>
-        <li>A Glimpse of Life</li>
-        <li>Celebrate Life with Us</li>
-        <li>Utopia</li>
-        <li>Under the Umbrella</li>
-        <li>Threads of a Thousand Rhymes Volume 2</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Collections & Series</h3>
-      <ul>
-        <li>Autumn Volume 5</li>
-        <li>Tranquil Volume 2</li>
-        <li>Petals 2024</li>
-        <li>Nebula Dreams Volume 1</li>
-        <li>Bouquet of Words Vol. 2 & 3</li>
-        <li>Whispers Beneath the Night Sky</li>
-      </ul>
-    </div>
-
-  </details>
 </section>
 
 <section id="achievements">
