@@ -90,9 +90,15 @@
       gap: 20px;
       align-items: flex-start;
       background: #1e293b;
-      padding: 18px;
+      padding: 22px;
       border-radius: 12px;
       margin-bottom: 20px;
+      border: 1px solid #334155;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     .book-card img {
@@ -104,13 +110,26 @@
       display: block;
     }
 
+    .book-content {
+      padding-top: 30px;
+    }
+
     .book-content h3 {
-      margin: 0;
+      margin: 10px 0 4px;
+      font-size: 1.4rem;
+    }
+
+    .book-content h5 {
+      margin: 0 0 10px;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #94a3b8;
     }
 
     .book-content p {
       margin: 6px 0 10px;
       color: #cbd5f5;
+      line-height: 1.6;
     }
 
     /* CARDS */
@@ -230,21 +249,43 @@
   <div class="book-card">
     <img src="images/eshani.jpg" alt="Eshani Book">
     <div class="book-content">
+
       <h3>The Adventures of Eshani and the Seasons</h3>
-      <p>A Magical Bedtime Journey Through India’s Six Seasons</p>
-      <p class="subtle">
-        Perfect for young readers, blending imagination with cultural richness.
+      <h5>A Magical Bedtime Journey Through India’s Six Seasons</h5>
+
+      <p>
+        Guided by a vibrant butterfly, Eshani journeys through India’s six seasons, discovering their beauty, meaning, and quiet magic.
       </p>
-      <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">View on Amazon</a>
+
+      <p class="subtle">
+        A soothing bedtime story that gently introduces children to nature, change, and wonder.
+      </p>
+
+      <a class="btn" href="https://www.amazon.in/dp/9376500202" target="_blank">
+        View on Amazon
+      </a>
+
     </div>
   </div>
 
   <div class="book-card">
     <img src="images/ekansh.jpg" alt="Ekansh Book">
     <div class="book-content">
+
       <h3>Ekansh and the Night of Falling Stars</h3>
-      <p>A Magical Bedtime Journey Through Stars</p>
-      <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">View on Amazon</a>
+      <h5>A Magical Bedtime Journey Through Stars</h5>
+      
+      <p>
+        One quiet night, Ekansh discovers fallen stars in his backyard and, with a cheerful firefly named Jugnu, sets out on a gentle journey to return them to the sky before sunrise.
+      </p>
+      
+      <p class="subtle">
+        A heartwarming bedtime story about wonder, friendship, and the quiet belief that even the smallest light can brighten the darkest night.
+      </p>
+      
+      <a class="btn" href="https://www.amazon.in/dp/9355454279" target="_blank">
+        View on Amazon
+      </a>
     </div>
   </div>
 
@@ -252,8 +293,18 @@
     <img src="images/sargam.jpg" alt="Sargam Book">
     <div class="book-content">
       <h3>The Sargam of Silence</h3>
-      <p>A Journey Through Friendship, Love, and Self-Discovery</p>
-      <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">View on Amazon</a>
+      <h5>A Journey Through Friendship, Love, and Self-Discovery</h5>
+      <p>
+        In this compelling tale, a group of boys navigate the fragile years of adolescence, each quietly carving his own path through confusion, growth, and change.
+      </p>
+      
+      <p class="subtle">
+        A reflective story exploring introspection, empathy, and kindness hidden within the chaos of growing up.
+      </p>
+
+      <a class="btn" href="https://www.amazon.in/dp/937650660X" target="_blank">
+        View on Amazon
+      </a>
     </div>
   </div>
 
